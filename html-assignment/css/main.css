@@ -1,0 +1,43 @@
+/* changing the font and font size */
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+/* changing the colour of the header and footer to lavender */
+h1, h2, footer{
+    background-color: lavender;
+}
+
+/* adding a class to the title to change the background colour */
+.site-title{
+    color: rosybrown;
+}
+
+/* formatting my picture (my-image) */
+#my-image{
+    box-shadow: 0px 0px 2px 1px #000000
+}
+
+/* formatting the navigation links - adding a background and removing the underline */
+nav a{
+    text-decoration: none;
+    background-color: lavenderblush;
+    border: 1px solid orangered;
+}
+
+/* changing the bullets on the hobby list to squares */
+ul{
+    list-style-type: square;
+}
+
+/* adding a background to the odd-numbered hobbies in my underordered list */
+article ul li:nth-child(odd) {
+    background-color: palegoldenrod
+}
+
+/* adding a hover colour to my links */
+nav a:hover {
+    color: mediumturquoise;
+    background-color: powderblue;
+}
