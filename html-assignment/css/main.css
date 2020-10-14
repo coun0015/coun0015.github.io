@@ -25,7 +25,7 @@ ul{
 }
 
 /* adding a background to the odd-numbered hobbies in my underordered list */
-article ul li:nth-child(odd) {
+article ul li:nth-child(odd){
     background-color: palegoldenrod
 }
 
@@ -37,7 +37,7 @@ nav a{
 }
 
 /* adding a hover colour to my links */
-nav a:hover {
+nav a:hover{
     color: mediumturquoise;
     background-color: powderblue;
 }
