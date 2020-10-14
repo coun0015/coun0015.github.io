@@ -19,13 +19,6 @@ h1, h2, footer{
     box-shadow: 0px 0px 2px 1px #000000
 }
 
-/* formatting the navigation links - adding a background and removing the underline */
-nav a{
-    text-decoration: none;
-    background-color: lavenderblush;
-    border: 1px solid orangered;
-}
-
 /* changing the bullets on the hobby list to squares */
 ul{
     list-style-type: square;
@@ -34,6 +27,13 @@ ul{
 /* adding a background to the odd-numbered hobbies in my underordered list */
 article ul li:nth-child(odd) {
     background-color: palegoldenrod
+}
+
+/* formatting the navigation links - adding a background and removing the underline */
+nav a{
+    text-decoration: none;
+    background-color: lavenderblush;
+    border: 1px solid orangered;
 }
 
 /* adding a hover colour to my links */
