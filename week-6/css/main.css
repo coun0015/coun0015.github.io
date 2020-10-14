@@ -1,6 +1,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategrey;
+    /* adding background image */
+    background-image: url("../images/white_brick_wall.png");
   }
   
   /* 
@@ -46,8 +48,18 @@ body {
   
   /* Selecting id value for styling the element */
   #tow {
-    background: orange;
+      /* color image repeat x-axis y-axis */
+    background: orange url("../images/bread.jpg") no-repeat center center;
+    background-size: cover;
+    /* additional styles to make text visible */
+    color: white;
+    /* font-size: 24px */
+    /* updating font size to rem 1.5 x 16 = 24 */
+    font-size: 1.5rem;
   }
+/* Adding padding to add space between the border and the content */
+
+  /* Adding width using viewport width unit */
   
   /* We can add multiple classes to one element */
   .large-text {
@@ -59,6 +71,12 @@ body {
   */
   article>p {
     font-size: 24px;
+    font-weight: bold;
+    /* values light, normal, bold, bolder OR you can 100, 200, 300, 400... */
+    line-height: 1.5;
+    /* line height number = number selected multiplied by the font-size; ideal is 1.4-1.6 */
+    text-transform: capitalize;
+    text-align: center;
   }
   
   /* Adjacent Sibling Selector 
@@ -184,3 +202,32 @@ body {
   footer.site-footer {
     background-color: lightgreen;
   }
+
+  /* CSS Box Model */
+section p {
+    width: 50%;
+    /* padding 1em */
+
+    /* top right bottom left */
+    /* padding: 1em .5em 1em .5em */
+
+    /* top-bottom left-right */
+    padding: 1em .5em;
+
+    /* margin: 2em */
+    /* 2em = 2 x 16 = 32px */
+
+    /* top right bottom left */
+    margin: -1em 2em 2em 2em;
+    /* 2em = 2 x 16 = 32 px */
+    border: 2px solid black;
+}
+
+aside ul li{
+    border-bottom: 1px solid black;
+}
+
+/* Adding borders as seperators */
+aside ul li:last-child{
+    border: none;
+}
