@@ -1,22 +1,137 @@
+
 .site-title{
 color: white;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+background-position: center
+font-weight: normal;
+font-size: xxx-large;
+background-image: url("../images/lone-starfish-wide.jpg");
+background-repeat: no-repeat;
+background-size: 100%;
+background-position-y: center;
+height: 300px;
 }
+
 
 body{
-    background-color: lightblue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #aad4cf;
+    font-family: Arial, Helvetica, sans-serif
 }
 
-article{
-    background-color: lightcyan;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: small;
-}
-
+/* formatting the main head */
 head{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+/* HEADERS */
+h1{
+    font-weight: 600;
+    font-size: 1em;
+    background-color: #d4e8e7;
+}
+
+#story{
+    border: black;
+}
+
+
+h2{
+    font-size: x-large;
+}
+
+h3{
+    margin-top: 20px;
+    font-size: large;
+}
+
+h4{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+/* picture in article */
+#starfishh2{
+    height: 200px;
+    width: 200px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    float: left;
+}
+
+/* formatting the main text */
+article{
+    background-color: #d4e8e7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: normal;
+    padding-left: 5px;
+    line-height: 1.25em;
+    padding-right: 9px;
+}
+
+
+/* remove indents from unordered list and change line height of text */
+ul{
+    padding-left: 15px;
+    line-height: 1rem;
+}
+
+/* Width for Contact to learn more form text/email area */
+#message{
+    width: 95%;
+    padding: 30px 5px;
+    margin: 6px;
+}
+#email{
+    width: 95%;
+    padding: 5px 5px;
+    margin: 6px;
+    border: none;
+}
+#fullname{
+    width: 95%;
+    padding: 5px 5px;
+    margin: 6px;
+    border: none;
+}
+
+
+/* labels for forms */
+label{
+    font-weight: bold;
+}
+
+/* changing text alignment for list */
+li{
+    text-align: left;
+}
+
+/* Formatting the SEND button */
+button{
+    background-color: #d4e8e7;
+    margin-bottom: 10px;
+    border-style: solid;
+    font-weight: lighter;
+    margin-top: 2px;
+}
+
+/* footer for the page */
+footer{
+    text-align: right;
+    font-size: xx-small;
+    background-color: #d4e8e7;
     font-weight: bold;
 }
 
