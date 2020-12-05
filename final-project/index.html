@@ -2,34 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="css/main.css" rel="stylesheet"
+    <link href="css/main.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Three Star Media</title>
 </head>
 
+<!-- MAIN AREA OF WEBPAGE, INCLUDES EVERYTHING -->
+
 <body>
-    <main>
+    <main class="wrapper">
 
 <!-- area for header/nav tabs and search bar-->
-        <div id="wrapper">
+        <div>
             <header class="site-header">
                     <nav>
-                        <img src="images/logo.png" alt="yellow stars" id="logopicture"/>
-                        <ul>
-                            <li>Home</li>
-                            <li>About Us</li>
-                            <li>Services</li>
-                            <li>Team</li>
-                            <li>Contact</li>
-                        </ul>
-                        <input type="text" placeholder="Search" id="searchbar">
+                        <div id="navbar">
+                            <!-- Nav tabs, style CSS using flex within header-->
+                            <ul>
+                                <li><img src="images/logo.png" alt="yellow stars" id="logopicture"/></li>
+                                <li>Home</li>
+                                <li>About Us</li>
+                                <li>Services</li>
+                                <li>Team</li>
+                                <li>Contact</li>
+                                <li><input type="text" placeholder="Search" id="searchbar"></li>
+                            </ul>
+                        </div>
                     </nav>
-            </header>
-        </div>
 
-<!-- Welcome banner area  -->
+          <!-- Welcome banner area within header -->
  
-        <div id="welcomebanner">
+        <div class="container" id="welcomebanner">
             <div class="container">
                 <h1>Welcome to Three Star Media</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel sit architecto facere accusantium ad, sed rerum itaque, hic nam voluptatum neque corporis consequatur ipsum asperiores laboriosam et quasi odio a.</p>
@@ -38,169 +41,230 @@
                 </p>
             </div>    
         </div>
-
-<!-- About Us section -->
-        <div id="aboutus">
-            <h2>About Us</h2>
-            <img src="images/about-us.jpg" alt="image of ping pong table" id="aboutuspicture"/>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eveniet nisi expedita totam ipsa nihil ducimus quis molestiae eligendi ullam voluptates accusamus itaque repellat, dolores aspernatur debitis necessitatibus. Sequi, exercitationem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quasi iste nemo, est quia veritatis dolor sed quo necessitatibus ab quis, animi eius alias, facere doloribus dolore reiciendis voluptatum possimus.</p>
+            </header>
         </div>
+
+
+
+<!-- SECOND AREA, RUNS FROM BELOW HEADER TO RIGHT BEFORE THE FOOTER -->
+ 
+<div>
+
+    <!-- About Us section -->
+        <section>
+            <div class="container" id="aboutus">
+                <!-- CSS - create two column grid to place side by side -->
+                <div id="aboutusimage">
+                    <img src="images/about-us.jpg" alt="image of ping pong table" id="aboutuspicture"/>
+                </div>
+            </div>
+                <div id="aboutustext">
+                    <h2>About Us</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eveniet nisi expedita totam ipsa nihil ducimus quis molestiae eligendi ullam voluptates accusamus itaque repellat, dolores aspernatur debitis necessitatibus. Sequi, exercitationem.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quasi iste nemo, est quia veritatis dolor sed quo necessitatibus ab quis, animi eius alias, facere doloribus dolore reiciendis voluptatum possimus.</p>
+                </div>
+        </section>
 
 <!-- Our Services Area with sub sections/containers with buttons -->
+       <section>
+           <div>
+                <div class="container" id="services">
 
-    <h2>Our Services</h2>
+                <!-- CSS: Row One - contains header which spans 6 columns -->
+                        <h2>Our Services</h2>
 
-    <div class="container">
-        <article>
-            <img src="images/digital.jpg" alt="image of person at computer desk with monitor and cell phone" id="digitalpicture"/>
-            <h3>Digital Transformation</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum magni quo voluptas blanditiis, adipisci quis recusandae nisi doloremque architecto voluptatem fugit quas consectetur maxime deleniti! Ea at repudiandae hic magni.</p>
-            <p>
-                <button type="button">Digital Plans</button>
-            </p>
-        </article>  
-    </div>
+                <!-- CSS: Row Two - contains Digital Transformation and Marketing - six columns, each takes 3 columns -->
+                       
+                        <!-- Digital Transformation container -->
+                        <div class="container">
+                            <div>
+                                <img src="images/digital.jpg" alt="image of person at computer desk with monitor and cell phone" id="digitalpicture"/>
+                                <h3>Digital Transformation</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum magni quo voluptas blanditiis, adipisci quis recusandae nisi doloremque architecto voluptatem fugit quas consectetur maxime deleniti! Ea at repudiandae hic magni.</p>
+                                    <p>
+                                    <button type="button">Digital Plans</button>
+                                </p>
+                            </div>  
+                        </div>
+                </div>
 
-    <div class="container">
-        <article>
-            <img src="images/marketing.jpg" alt="image of macbook pro" id="marketingpicture"/>
-            <h3>Marketing</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum magni quo voluptas blanditiis, adipisci quis recusandae nisi doloremque architecto voluptatem fugit quas consectetur maxime deleniti! Ea at repudiandae hic magni.</p>
-            <p>
-                <button type="button">Marketing Plans</button>
-            </p>
-        </article>  
-    </div>
+                        <!-- Marketing Container -->
+                        <div class="container">
+                            <div>
+                                <img src="images/marketing.jpg" alt="image of macbook pro" id="marketingpicture"/>
+                                <h3>Marketing</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum magni quo voluptas blanditiis, adipisci quis recusandae nisi doloremque architecto voluptatem fugit quas consectetur maxime deleniti! Ea at repudiandae hic magni.</p>
+                                    <p>
+                                      <button type="button">Marketing Plans</button>
+                                    </p>
+                            </div>
+                        </div> 
+            </div>
+   
+                <!-- CSS: Row Three - six columns (Video Production 2 columns, Web Dev 2 columns, Print 2 columns) -->
 
-        <div class="container">
-            <article>
-                <img src="images/video.jpg" alt="image of iphone" id="videopicture"/>
-                <h3>Video Production</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum magni quo voluptas blanditiis, adipisci quis recusandae nisi doloremque architecto voluptatem fugit quas consectetur maxime deleniti! Ea at repudiandae hic magni.</p>
-                <p>
-                    <button type="button">Video Plans</button>
-                </p>
-            </article>  
-        </div>
+                        <!-- Video Production Container -->
+                        <div class="container">
+                           <div>
+                               <img src="images/video.jpg" alt="image of iphone" id="videopicture"/>
+                               <h3>Video Production</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum magni quo voluptas blanditiis, adipisci quis recusandae nisi doloremque architecto voluptatem fugit quas consectetur maxime deleniti! Ea at repudiandae hic magni.</p>
+                                    <p>
+                                      <button type="button">Video Plans</button>
+                                    </p>
+                            </div>  
+                        </div>
+                       
+                       <!-- Web Development Container -->
+                       <div class="container">
+                           <div>
+                               <img src="images/web.jpg" alt="image of phone on notepad" id="webpicture"/>
+                               <h3>Web Development</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum magni quo voluptas blanditiis, adipisci quis recusandae nisi doloremque architecto voluptatem fugit quas consectetur maxime deleniti! Ea at repudiandae hic magni.</p>
+                                    <p>
+                                      <button type="button">Web Plans</button>
+                                    </p>
+                           </div>  
+                      </div>
 
-        <div class="container">
-            <article>
-                <img src="images/web.jpg" alt="image of phone on notepad" id="webpicture"/>
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum magni quo voluptas blanditiis, adipisci quis recusandae nisi doloremque architecto voluptatem fugit quas consectetur maxime deleniti! Ea at repudiandae hic magni.</p>
-                <p>
-                    <button type="button">Web Plans</button>
-                </p>
-            </article>  
-        </div>
-
-        <div class="container">
-            <article>
-                <img src="images/print.jpg" alt="image of newspaper stands" id="printpicture"/>
-                <h3>Print</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum magni quo voluptas blanditiis, adipisci quis recusandae nisi doloremque architecto voluptatem fugit quas consectetur maxime deleniti! Ea at repudiandae hic magni.</p>
-                <p>
-                    <button type="button">Print Plans</button>
-                </p>
-            </article>  
-        </div>
+                      <!-- Print Container -->
+                      <div class="container">
+                          <div>
+                                <img src="images/print.jpg" alt="image of newspaper stands" id="printpicture"/>
+                                <h3>Print</h3>
+                                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum magni quo voluptas blanditiis, adipisci quis recusandae nisi doloremque architecto voluptatem fugit quas consectetur maxime deleniti! Ea at repudiandae hic magni.</p>
+                                  <p>
+                                    <button type="button">Print Plans</button>
+                                  </p>
+                          </div>  
+                      </div>
+       </section>
 
 <!-- Our Vision area -->
 
-        <div id="ourvision" class="wrapper">
-            <article>
+       <section>
+            <!-- Our Vision container -->
+            <div class="container" id="ourvision" >
                 <h3>Our Vision</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia odit repellat perferendis ratione laborum dicta asperiores facilis dignissimos? Optio ipsa recusandae quod beatae aspernatur quasi corrupti, quis ea consequatur?</p>
-                <p>
-                    <button type="button">Learn More</button>
-                </p>
-            </article>
-        </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia odit repellat perferendis ratione laborum dicta asperiores facilis dignissimos? Optio ipsa recusandae quod beatae aspernatur quasi corrupti, quis ea consequatur?
+                    </p>
+                    <p>
+                        <button type="button">Learn More</button>
+                    </p>
+             </div>
+      </section>
 
 <!-- Our Team area -->
 
-        <div id="ourteam">
-        <h2>Our Team</h2>
-        <section>
-            <article>
-                <img src="images/john.jpg" alt="image of john" id="johnpicture"/>
-                <h3>John Doe</h3>
-                <p>CEO and Co-owner</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi consequuntur sed similique eaque minus fuga deserunt, aperiam dolorem, corrupti accusantium est quod dolorum sint in inventore esse, voluptatem maiores reprehenderit.</p>
-            </article>
+       <section>
+            <div class="container" id="ourteam">
 
-            <article>
-                <img src="images/bob.jpg" alt="image of bob" id="bobpicture"/>
-                <h3>Bob Rite</h3>
-                <p>CFO and Co-owner</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex veniam ab cupiditate labore inventore quo voluptas quis ad quae optio, ducimus, atque iure, voluptate tempora rerum excepturi velit placeat incidunt?</p>
-            </article>
+                <!-- CSS: Row One - Two columns -->
+                <h2>Our Team</h2>
+
+                <!-- CSS: Row Two - Two columns, Image and Text of John -->
+                <!-- Image of John -->
+                        <div>
+                            <img src="images/john.jpg" alt="image of john" id="johnpicture"/>
+                        </div>
+                <!-- John Doe Container -->
+                        <div>
+                            <h3>John Doe</h3>
+                                <p>CEO and Co-owner</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi consequuntur sed similique eaque minus fuga deserunt, aperiam dolorem, corrupti accusantium est quod dolorum sint in inventore esse, voluptatem maiores reprehenderit.</p>
+                        </div>
+                <!-- CSS: Row Three - Two columns, Image and Text of Bob -->
+                <!-- Image of Bob -->
+                        <div>
+                            <img src="images/bob.jpg" alt="image of bob" id="bobpicture"/>
+                        </div>
+                <!-- Bob Rite Container -->
+                        <div>
+                            <h3>Bob Rite</h3>
+                                <p>CFO and Co-owner</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex veniam ab cupiditate labore inventore quo voluptas quis ad quae optio, ducimus, atque iure, voluptate tempora rerum excepturi velit placeat incidunt?</p>
+                        </div>         
+            </div>
         </section>
-        </div>
-
- </main>
  
-    <div id="contactus">
-        <h2>Contact Us</h2>
-            <article>
-                <h3>Send us a message</h3>
-                <form action="contactus.html" method="GET">
-                    <label for="fullname">Full Name</label>
-                    <input id="fullname" type="text">
-                    <p>
-                    <label for="email">Email</label>
-                    <input id="email" type="text">
-                    </p>
-                    <p>
-                    <label for="message">Message</label>
-                    <input id="message" type="text">
-                    </p>
-                </form>
-                <button type="submit">SEND</button>
-            </article>
-    </div>
 
-    <div id="location">
-        <article>
-            <h3>Location</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44842.62508909829!2d-75.73310586557454!3d45.37577351508529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20%E2%80%93%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1606313138243!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </article>
-    </div>
+     <!--Contact Us Section: contains contact form, google maps and location  -->
+        <section>
+            
+            <div class="container" id="contactus">
+                
+                <!-- CSS: Row 1, Columns 2, span entire column-->
+                <h2>Contact Us</h2>
 
-    <div id="hoursofop">
-        <article>
-            <h3>Hours of operation</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Days</th>
-                            <th>Hours</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Monday - Friday</td>
-                            <td>9 AM - 6 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday - Sunday</td>
-                            <td>Closed</td>
-                        </tr>
-                    </tbody>
-                </table>
-        </article>
-    </div>
+                <!-- CSS: Row 2, Columns 2 for each - Send us a message and Location) -->
+                <!-- Send us a Message container -->
+                    <div>
+                        <h3>Send us a message</h3>
+                            <form action="contactus.html" method="GET">
+                                <label for="fullname">Full Name</label>
+                                    <input id="fullname" type="text">
+                                    <p>
+                                    <label for="email">Email</label>
+                                    <input id="email" type="text">
+                                    </p>
+                                    <p>
+                                    <label for="message">Message</label>
+                                    <input id="message" type="text">
+                                    </p>
+                                    </form>
+                                    <button type="submit">SEND</button>
+                    </div>
+            </div>
+
+            <!-- Location Container - Google Maps Insert -->
+           <div class="container" id="location">
+                   <div>
+                     <h3>Location</h3>
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44842.62508909829!2d-75.73310586557454!3d45.37577351508529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20%E2%80%93%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1606313138243!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+           </div>
+
+           <!-- CSS: Row 3, Columns 2 - each column must have equal width -->
+           <!-- Hours of Operation -->
+            <div class="container" id="hoursofop">
+                <div>
+                    <h3>Hours of operation</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Days</th>
+                                    <th>Hours</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday - Friday</td>
+                                    <td>9 AM - 6 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday - Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+
+      </section>
+
+ </div>
 
 
 <!-- Site footer -->
+    <div class="container">
+            <footer class="site-footer">
+                &copy; Copyright Three Star Media, 2020
+                <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
+            </footer>
+        </div>
 
-    <footer class="site-footer">
-        &copy; Copyright Three Star Media, 2020
-        <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
-    </footer>
-
-</body>
+    </main>
+   </body>
 </html>
 
 
