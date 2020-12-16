@@ -1,20 +1,187 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start of my own code */
+
+
+
+@media only screen and (max-width: 1200px) {
+    body {
+    }
+  }
+
+.wrapper {
+    max-width: 1200px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.site-header {
+    background-color: #222;
+}
+
+#aboutus {
+    background-color: #ffe6ac;
+}
+#aboutustext {
+    background-color: #ffe6ac;
+}
+
+#connect{
+    color: black;
+    background-color: darkgoldenrod;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 50pt;
+    color: white;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+/* Nav bar */
 li{
     list-style-type: none;
     display: inline;
+    color: darkgoldenrod;
+    padding: 10px;
 }
 
+ul{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
 
+/* Footer */
 .site-footer{
     background-color: black;
-    color: darkorange;
+    color: darkgoldenrod;
+    font-size: 10px;
+    text-align: start;
+    padding: 2em;
 }
+
 
 .button2{
     width: 60px;
 }
 
+/* Welcome banner */
+
+
 #welcomebanner {
     background-image: url(../images/main-banner.jpg);
     background-repeat: no-repeat;
+}
+
+#welcome {
+    background-color: black;
+    opacity: 0.5;
+}
+
+#services {
+    display: grid;
+    grid-template-columns: 1 1;
+    grid-template-rows: 1 1;
+}
+
+#ourservices {
+    grid-row: 1/2;
+}
+
+h3{
+    font-weight: bolder;
+    font-stretch: wider;
+    font-size: 1.5em;
+    padding: 0.5rem;
+}
+
+
+#digtrans,
+#marketing,
+#videoprod,
+#webdev,
+#print {
+    background-color: #ffe6ac ;
+}
+
+
+#johndoe{
+    background-color: #ffe6ac;
+}
+
+#bobrite{
+    background-color: #ffe6ac;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border-color: darkgoldenrod;
+    border-width: thin;
+}
+
+#submit{
+    background-color: black;
+    color: orange;
+}
+
+
+
+#hoursofop{
+    grid-template-rows: 100px 50px;
+    grid-template-rows: 100px 50px;
+    column-gap: 10px;
+    row-gap: 10px;
 }
 

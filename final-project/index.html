@@ -5,6 +5,7 @@
     <link href="css/main.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Three Star Media</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <!-- MAIN AREA OF WEBPAGE, INCLUDES EVERYTHING -->
@@ -33,11 +34,11 @@
           <!-- Welcome banner area within header -->
  
         <div class="container" id="welcomebanner">
-            <div class="container">
+            <div class="container" id="welcome">
                 <h1>Welcome to Three Star Media</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel sit architecto facere accusantium ad, sed rerum itaque, hic nam voluptatum neque corporis consequatur ipsum asperiores laboriosam et quasi odio a.</p>
                 <p>
-                    <button type="button">Connect with Us</button>
+                    <button type="button" id="connect">Connect with Us</button>
                 </p>
             </div>    
         </div>
@@ -61,6 +62,7 @@
                 <div id="aboutustext">
                     <h2>About Us</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eveniet nisi expedita totam ipsa nihil ducimus quis molestiae eligendi ullam voluptates accusamus itaque repellat, dolores aspernatur debitis necessitatibus. Sequi, exercitationem.</p>
+
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quasi iste nemo, est quia veritatis dolor sed quo necessitatibus ab quis, animi eius alias, facere doloribus dolore reiciendis voluptatum possimus.</p>
                 </div>
         </section>
@@ -71,12 +73,12 @@
                 <div class="container" id="services">
 
                 <!-- CSS: Row One - contains header which spans 6 columns -->
-                        <h2>Our Services</h2>
+                        <h2 id="ourservices">Our Services</h2>
 
                 <!-- CSS: Row Two - contains Digital Transformation and Marketing - six columns, each takes 3 columns -->
                        
                         <!-- Digital Transformation container -->
-                        <div class="container">
+                        <div class="container" id="digtrans">
                             <div>
                                 <img src="images/digital.jpg" alt="image of person at computer desk with monitor and cell phone" id="digitalpicture"/>
                                 <h3>Digital Transformation</h3>
@@ -89,7 +91,7 @@
                 </div>
 
                         <!-- Marketing Container -->
-                        <div class="container">
+                        <div class="container" id="marketing">
                             <div>
                                 <img src="images/marketing.jpg" alt="image of macbook pro" id="marketingpicture"/>
                                 <h3>Marketing</h3>
@@ -104,7 +106,7 @@
                 <!-- CSS: Row Three - six columns (Video Production 2 columns, Web Dev 2 columns, Print 2 columns) -->
 
                         <!-- Video Production Container -->
-                        <div class="container">
+                        <div class="container" id="videoprod">
                            <div>
                                <img src="images/video.jpg" alt="image of iphone" id="videopicture"/>
                                <h3>Video Production</h3>
@@ -116,7 +118,7 @@
                         </div>
                        
                        <!-- Web Development Container -->
-                       <div class="container">
+                       <div class="container" id="webdev">
                            <div>
                                <img src="images/web.jpg" alt="image of phone on notepad" id="webpicture"/>
                                <h3>Web Development</h3>
@@ -128,7 +130,7 @@
                       </div>
 
                       <!-- Print Container -->
-                      <div class="container">
+                      <div class="container" id="print">
                           <div>
                                 <img src="images/print.jpg" alt="image of newspaper stands" id="printpicture"/>
                                 <h3>Print</h3>
@@ -168,7 +170,7 @@
                             <img src="images/john.jpg" alt="image of john" id="johnpicture"/>
                         </div>
                 <!-- John Doe Container -->
-                        <div>
+                        <div id="johndoe">
                             <h3>John Doe</h3>
                                 <p>CEO and Co-owner</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi consequuntur sed similique eaque minus fuga deserunt, aperiam dolorem, corrupti accusantium est quod dolorum sint in inventore esse, voluptatem maiores reprehenderit.</p>
@@ -179,7 +181,7 @@
                             <img src="images/bob.jpg" alt="image of bob" id="bobpicture"/>
                         </div>
                 <!-- Bob Rite Container -->
-                        <div>
+                        <div id="bobrite">
                             <h3>Bob Rite</h3>
                                 <p>CFO and Co-owner</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex veniam ab cupiditate labore inventore quo voluptas quis ad quae optio, ducimus, atque iure, voluptate tempora rerum excepturi velit placeat incidunt?</p>
@@ -212,7 +214,7 @@
                                     <input id="message" type="text">
                                     </p>
                                     </form>
-                                    <button type="submit">SEND</button>
+                                    <button type="submit" id="submit">SEND</button>
                     </div>
             </div>
 
@@ -259,6 +261,7 @@
     <div class="container">
             <footer class="site-footer">
                 &copy; Copyright Three Star Media, 2020
+            
                 <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
             </footer>
     </div>
